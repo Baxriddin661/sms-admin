@@ -265,13 +265,12 @@ class _TemplatesPageState extends State<TemplatesPage> {
                   child: Container(
                       width: MediaQuery.of(context).size.width / 4,
                       decoration: BoxDecoration(color: Colors.white),
-                      child: Expanded(
-                          child: AppText(
+                      child: AppText(
                         model.text ?? '',
                         textOverflow: TextOverflow.ellipsis,
                         maxLines: 2,
-                            color: Colors.red,
-                      ))),
+                        color: Colors.red,
+                      )),
                 )),
                 DataCell(AppText(model.createdAt ?? 'N/A')),
                 if (bloc.sharedData.userModel!.roleId == 1) ...{
