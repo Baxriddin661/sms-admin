@@ -245,7 +245,7 @@ class _TemplatesPageState extends State<TemplatesPage> {
                 DataCell(AppText(model.abonentId.toString())),
                 DataCell(ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.transparent,
+                    backgroundColor: Colors.white,
                     // shadowColor: Colors.transparent,
                     shape: RoundedRectangleBorder(
                       borderRadius:
@@ -255,9 +255,11 @@ class _TemplatesPageState extends State<TemplatesPage> {
                   onPressed: () {
                     showTemplateText(model);
                   },
-                  child: SizedBox(
+                  child: Container(
                       width: MediaQuery.of(context).size.width / 4,
-                      // decoration: BoxDecoration(),
+                      decoration: BoxDecoration(
+                        color: Colors.white
+                      ),
                       child: Expanded(
                           child: AppText(
                         model.text ?? '',
