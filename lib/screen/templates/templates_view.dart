@@ -244,7 +244,7 @@ class _TemplatesPageState extends State<TemplatesPage> {
                 DataCell(AppText(model.abonentId.toString())),
                 DataCell(ElevatedButton(
                   style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.red),
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                       shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius:
                             BorderRadius.circular(10), // Change the radius here
@@ -264,12 +264,11 @@ class _TemplatesPageState extends State<TemplatesPage> {
                   },
                   child: Container(
                       width: MediaQuery.of(context).size.width / 4,
-                      decoration: BoxDecoration(color: Colors.white),
+                      decoration: BoxDecoration(),
                       child: AppText(
                         model.text ?? '',
                         textOverflow: TextOverflow.ellipsis,
                         maxLines: 2,
-                        color: Colors.red,
                       )),
                 )),
                 DataCell(AppText(model.createdAt ?? 'N/A')),
