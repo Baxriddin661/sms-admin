@@ -29,8 +29,7 @@ class _TemplatesPageState extends State<TemplatesPage> {
     showDialog(
       context: context,
       builder: (context) => Dialog(
-        child:
-        Container(
+        child: Container(
           width: 350,
           height: 150,
           padding: EdgeInsets.all(20),
@@ -244,22 +243,28 @@ class _TemplatesPageState extends State<TemplatesPage> {
                 DataCell(AppText(model.type)),
                 DataCell(AppText(model.abonentId.toString())),
                 DataCell(ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    // shadowColor: Colors.transparent,
-                    shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(10), // Change the radius here
-                    ),
-                  ),
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(10), // Change the radius here
+                      ))),
+                  // shadowColor: Colors.transparent,
+
+                  // style: ElevatedButton.styleFrom(
+                  //   backgroundColor: Colors.white,
+                  //   // shadowColor: Colors.transparent,
+                  //   shape: RoundedRectangleBorder(
+                  //     borderRadius:
+                  //         BorderRadius.circular(10), // Change the radius here
+                  //   ),
+                  // ),
                   onPressed: () {
                     showTemplateText(model);
                   },
                   child: Container(
                       width: MediaQuery.of(context).size.width / 4,
-                      decoration: BoxDecoration(
-                        color: Colors.white
-                      ),
+                      decoration: BoxDecoration(color: Colors.white),
                       child: Expanded(
                           child: AppText(
                         model.text ?? '',
