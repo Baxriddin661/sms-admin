@@ -132,7 +132,7 @@ class _TemplatesPageState extends State<TemplatesPage> {
         padding: EdgeInsets.all(5),
         width: 200,
         decoration: BoxDecoration(
-          // color: Colors.blue.shade100,
+          color: Colors.blue.shade100,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -245,6 +245,7 @@ class _TemplatesPageState extends State<TemplatesPage> {
                 DataCell(AppText(model.abonentId.toString())),
                 DataCell(ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.transparent,
                     shadowColor: Colors.transparent,
                     shape: RoundedRectangleBorder(
                       borderRadius:
