@@ -249,16 +249,7 @@ class _TemplatesPageState extends State<TemplatesPage> {
                         borderRadius:
                             BorderRadius.circular(10), // Change the radius here
                       ))),
-                  // shadowColor: Colors.transparent,
 
-                  // style: ElevatedButton.styleFrom(
-                  //   backgroundColor: Colors.white,
-                  //   // shadowColor: Colors.transparent,
-                  //   shape: RoundedRectangleBorder(
-                  //     borderRadius:
-                  //         BorderRadius.circular(10), // Change the radius here
-                  //   ),
-                  // ),
                   onPressed: () {
                     showTemplateText(model);
                   },

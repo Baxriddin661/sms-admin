@@ -1,5 +1,5 @@
 abstract class ApiConstant {
-  static const String baseUrl = "https://allied-texture-fifth-assessing.trycloudflare.com";
+  static const String baseUrl = "https://mystery-cube-lakes-losses.trycloudflare.com";
   static const String login = "/api/v1/main/auth/login";
   static const String profileMe = "/api/v1/abonents/retrieve/{login}";
   static const String usersList = "/api/v1/abonents/all";
