@@ -13,7 +13,7 @@ class _RestClient implements RestClient {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'https://allied-texture-fifth-assessing.trycloudflare.com';
+    baseUrl ??= 'https://coupled-harvard-acoustic-labs.trycloudflare.com';
   }
 
   final Dio _dio;
